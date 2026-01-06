@@ -67,7 +67,7 @@ export default function ContactPage() {
 
             {/* Contact Information & Form */}
             <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16">
                         {/* Contact Information */}
                         <motion.div
@@ -88,8 +88,8 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-lg font-bold text-gray-900 mb-2">Emergency Service</h3>
                                         <p className="text-gray-600">Available 24/7 for urgent thermal issues</p>
-                                        <a href="tel:+5551234567" className="text-blue-600 font-semibold text-lg hover:text-blue-800">
-                                            (555) 123-4567
+                                        <a href="tel:0771234567" className="text-blue-600 font-semibold text-lg hover:text-blue-800">
+                                            07712304567
                                         </a>
                                     </div>
                                 </div>
@@ -116,7 +116,6 @@ export default function ContactPage() {
                                         <p className="text-gray-600">Serving Zimbabwe and the region</p>
                                         <p className="text-gray-700 font-medium">
                                             123 Engineering Drive<br />
-                                            Technical District<br />
                                             Harare, Zimbabwe
                                         </p>
                                     </div>
@@ -131,15 +130,15 @@ export default function ContactPage() {
                                         <div className="space-y-1 text-gray-700">
                                             <div className="flex justify-between">
                                                 <span>Monday - Friday:</span>
-                                                <span className="font-medium">8:00 AM - 6:00 PM</span>
+                                                <span className="font-medium">8:00 AM - 5:00 PM</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span>Saturday:</span>
-                                                <span className="font-medium">9:00 AM - 4:00 PM</span>
+                                                <span className="font-medium">9:00 AM - 3:00 PM</span>
                                             </div>
                                             <div className="flex justify-between text-orange-600 font-bold">
-                                                <span>Emergency Service:</span>
-                                                <span>24/7 Available</span>
+                                                <span>Emergency Service: </span>
+                                                <span> 24/7 Available</span>
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +153,7 @@ export default function ContactPage() {
                                     className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3"
                                 >
                                     <PhoneCall className="h-5 w-5" />
-                                    Emergency Call: (555) 123-4567
+                                    Emergency Call: 0771234567
                                 </motion.button>
 
                                 <motion.button
@@ -315,7 +314,7 @@ export default function ContactPage() {
 
             {/* Map & Service Area */}
             <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                             Service Area
