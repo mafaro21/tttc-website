@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Logo from '@/public/tttc.png'
+import Image from 'next/image'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -684,18 +686,10 @@ export default function Home() {
             >
               <div className="flex items-center space-x-3 mb-6">
                 <Link href="/">
-                  <motion.div
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6 }}
-                    className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center cursor-pointer"
-                  >
-                    <span className="text-white font-bold text-xl">T</span>
-                  </motion.div>
+                  <Image src={Logo} alt='Logo' height={100} />
                 </Link>
-                <div>
-                  <span className="text-2xl font-bold">TTTC</span>
-                  <div className="text-sm text-gray-400">Thermal Engineering Specialists</div>
-                </div>
+
+
               </div>
               <p className="text-gray-400 text-sm mb-6">
                 Professional thermal engineering solutions for residential and commercial clients.

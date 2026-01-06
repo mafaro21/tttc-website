@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Phone, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from '@/public/tttc.png'
+import Image from 'next/image'
 
 export default function Navigation() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,14 +24,8 @@ export default function Navigation() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-xl">T</span>
-                        </div>
-                        <div>
-                            <span className="text-2xl font-bold text-gray-900">TTTC</span>
-                            <span className="text-xs text-gray-500 font-medium block -mt-1">Thermal Engineering</span>
-                        </div>
+                    <Link href="/">
+                        <Image src={Logo} alt='Logo' height={100} />
                     </Link>
 
                     {/* Desktop Navigation */}
